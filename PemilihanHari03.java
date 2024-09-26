@@ -9,19 +9,20 @@ public class PemilihanHari03 {
         dayName = sc.nextLine();
 
         switch (dayName.toLowerCase()) {
-            case "Monday" :
+            case "monday" :
             case "tuesday" : 
             case "wednesday" :
             case "thursday" :
             case "friday" :
-                dayType = "weekend";
+                dayType = "weekday";
                 break;
             case "saturday" :
             case "sunday" :
                 dayType = "weekend";
+                break;
             default:
                 dayType = "invalid day name";
         }
-        System.out.println(dayName + "is a" + dayType);
+        System.out.println(dayName + "is a " + dayType);
     }
 }
